@@ -154,7 +154,7 @@
 
       const [count, setCount]
         = React.useState(() => {
-          return jsonLocalStorage.getItem('count');
+          return jsonLocalStorage.getItem('count') || 1;
         });
 
       const choiceFavorite = favorits.includes(mainAnimal);
